@@ -1,0 +1,16 @@
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.exe
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.deps.json
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.runtimeconfig.json
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.runtimeconfig.dev.json
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.dll
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\ref\patika-practices.dll
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\bin\Debug\net5.0\patika-practices.pdb
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.csproj.AssemblyReference.cache
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.AssemblyInfoInputs.cache
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.AssemblyInfo.cs
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.csproj.CoreCompileInputs.cache
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.dll
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\ref\patika-practices.dll
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.pdb
+C:\Users\emred\Desktop\CODING\Patika\patika-practices\obj\Debug\net5.0\patika-practices.genruntimeconfig.cache
