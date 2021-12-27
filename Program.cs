@@ -6,7 +6,7 @@ namespace patika_practices
     {
         static void Main(string[] args)
         {   
-            //*CONSOLE PROGRAMMING
+            //---CONSOLE PROGRAMMING---
             /* Console.WriteLine("Hello World!");
             Console.WriteLine("Enter your name:");
             var name=Console.ReadLine();
@@ -14,8 +14,8 @@ namespace patika_practices
             var surname=Console.ReadLine();
             Console.WriteLine("Welcome "+name+" "+surname); */
 
-            //*VARIABLES
-            Console.WriteLine("");
+            //---VARIABLES---
+            /* Console.WriteLine("");
 
             byte b=5; //! 1 byte
             sbyte c=5; //! 1 byte
@@ -93,8 +93,72 @@ namespace patika_practices
             //*Hour
 
             string hour=DateTime.Now.ToString("HH:mm");
-            Console.WriteLine(hour);
+            Console.WriteLine(hour); */
 
+            //---OPERATORS---
+
+            //* Assignment Operators
+
+            int x = 3;
+            int y = 3;
+            y=y+2;
+
+            Console.WriteLine(y);
+            y += 2;
+            Console.WriteLine(y);
+            y /= 1;
+            Console.WriteLine(y);
+            x *= 2;
+            Console.WriteLine(x);
+
+            //* Logical Operators 
+            //* ||, &&, !
+            bool isSuccess = true;
+            bool isCompleted=false;
+
+            if(isSuccess && isCompleted)
+                Console.WriteLine("Perfect");
+            if(isSuccess || isCompleted)
+                Console.WriteLine("Great");
+            if(isSuccess && !isCompleted)
+                Console.WriteLine("Fine!");
+
+            //* Relational Operators
+            //* <, >, <=, >=, ==, !=
+
+            int a=3;
+            int b=4;
+            bool sonuc=a<b;
+
+            Console.WriteLine(sonuc);
+            sonuc=a>b;
+            Console.WriteLine(sonuc);
+            sonuc= a>=b;
+            Console.WriteLine(sonuc);
+            sonuc= a<=b;
+            Console.WriteLine(sonuc);
+            sonuc= a==b;
+            Console.WriteLine(sonuc);
+            sonuc= a!=b;
+            Console.WriteLine(sonuc);
+
+            //* Arithmetic Operators
+            //* /, *, +, -
+
+            int sayi1=18;
+            int sayi2=5;
+            int sonuc1= sayi1/sayi2;
+            Console.WriteLine(sonuc1);
+            sonuc1= sayi1*sayi2;
+            Console.WriteLine(sonuc1);
+            sonuc1= sayi1+sayi2;
+            Console.WriteLine(sonuc1);
+            sonuc1= sayi1++;
+            Console.WriteLine(sayi1);
+
+            //* % : mod
+            int sonuc2= 20%3;
+            Console.WriteLine(sonuc2);
         }
     }
 }
