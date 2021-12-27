@@ -95,26 +95,6 @@ namespace patika_practices
             string hour=DateTime.Now.ToString("HH:mm");
             Console.WriteLine(hour);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            
-
-
-
-
-
         }
     }
 }
