@@ -267,7 +267,7 @@ namespace patika_practices
 
         }
 
-        public static void ParseMethod()
+        /* public static void ParseMethod()
         {
             string metin1= "10";
             string metin2= "10.25";
@@ -279,6 +279,6 @@ namespace patika_practices
 
             Console.WriteLine("rakam1 :"+ rakam1);
             Console.WriteLine("double1 :"+ double1); 
-        }
+        } */
     }
 }
