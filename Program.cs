@@ -163,7 +163,7 @@ namespace patika_practices
             //---- TYPE CONVERSION ----
             //*** Implicit Conversion (Bilinçsiz)
 
-            byte a = 5;
+            /* byte a = 5;
             sbyte b = 30;
             short c= 10;
 
@@ -179,11 +179,11 @@ namespace patika_practices
             string e= "zikriye";
             char f='k';
             object g =e+f+d;
-            Console.WriteLine("g:"+ g);
+            Console.WriteLine("g:"+ g); */
 
             //*** Explicit Conversion (Bilinçli)
 
-            int x =4;
+           /*  int x =4;
             byte y = (byte)x;
             Console.WriteLine("y:"+ y);
 
@@ -193,18 +193,18 @@ namespace patika_practices
 
             float w= 10.3f;
             byte v=(byte)w;
-            Console.WriteLine("v:"+v);
+            Console.WriteLine("v:"+v); */
 
             //* ToString Method
-            int xx=6;
+            /* int xx=6;
             string yy= xx.ToString();
             Console.WriteLine("yy:"+ yy);
 
             string zz=12.5f.ToString();
-            Console.WriteLine("zz:"+zz);
+            Console.WriteLine("zz:"+zz); */
 
             //* System.Convert
-            string s1="10", s2="20";
+            /* string s1="10", s2="20";
             int sayi1, sayi2;
             int Toplam;
 
@@ -212,10 +212,59 @@ namespace patika_practices
             sayi2= Convert.ToInt32(s2);
 
             Toplam= sayi1+sayi2;
-            Console.WriteLine("Toplam:"+ Toplam);
+            Console.WriteLine("Toplam:"+ Toplam); */
 
             //* Parse
-            ParseMethod();
+            /* ParseMethod(); */
+            
+            //---- TRY - CATCH - FINALLY ----
+            try
+            {
+                Console.WriteLine("Bir sayı giriniz:");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Girmiş olduğunuz sayı: "+ sayi);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: "+ex.Message.ToString());
+            }
+            finally
+            {
+                Console.Write("İşlem tamamlandı!");
+            }
+            
+            try
+            {
+                 int a = int.Parse(null);
+                 int b = int.Parse("test");
+                 int c = int.Parse("-20000000000");
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine("Boş değer girdiniz.");
+                Console.WriteLine(ex);
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Veri tipi uygun değil.");
+                Console.WriteLine(ex);
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine("Çok küçük ya da çok büyük bir değer girdiniz.");
+                Console.WriteLine(ex);
+            }
+            finally
+            {
+                 Console.Write("İşlem tamamlandı!");
+            }
+            
+
+            
+            
+
+            
+
         }
 
         public static void ParseMethod()
@@ -229,7 +278,7 @@ namespace patika_practices
             double1= Double.Parse(metin2);
 
             Console.WriteLine("rakam1 :"+ rakam1);
-            Console.WriteLine("double1 :"+ double1);
+            Console.WriteLine("double1 :"+ double1); 
         }
     }
 }
