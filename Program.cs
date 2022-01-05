@@ -218,7 +218,7 @@ namespace patika_practices
             /* ParseMethod(); */
             
             //---- TRY - CATCH - FINALLY ----
-            try
+            /* try
             {
                 Console.WriteLine("Bir sayı giriniz:");
                 int sayi = Convert.ToInt32(Console.ReadLine());
@@ -231,9 +231,9 @@ namespace patika_practices
             finally
             {
                 Console.Write("İşlem tamamlandı!");
-            }
+            } */
             
-            try
+            /* try
             {
                  int a = int.Parse(null);
                  int b = int.Parse("test");
@@ -257,8 +257,23 @@ namespace patika_practices
             finally
             {
                  Console.Write("İşlem tamamlandı!");
-            }
+            } */
             
+            //---- IF - IF ELSE - TERNARY ----
+            int time = DateTime.Now.Hour;
+
+            if(time>=6 && time<=11)
+                Console.WriteLine("Günaydın!");
+            else if(time<=18)
+                Console.WriteLine("İyi günler!");
+            else
+                Console.WriteLine("İyi geceler!");
+
+            string sonuc = time<=18 ? "İyi günler!" : "İyi geceler!";
+
+            sonuc = time>=6 && time <=11 ? "Günaydın!" : time <=18 ? "İyi günler!" : "İyi geceler!";
+
+            Console.WriteLine(sonuc);
 
             
             
@@ -267,6 +282,17 @@ namespace patika_practices
 
         }
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public static void ParseMethod()
         {
             string metin1= "10";
