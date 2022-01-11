@@ -314,16 +314,16 @@ namespace patika_practices
 
             //---- FOR LOOP ----
             //* Ekrandan girilen sayıya kadar olan tek sayılarını ekrana yazdır
-            Console.Write("Lütfen bir sayı giriniz: ");
+            /* Console.Write("Lütfen bir sayı giriniz: ");
             int sayac = int.Parse(Console.ReadLine());
             for (int i = 1; i<=sayac; i++)
             {
                 if(i%2 == 1)
                     Console.WriteLine(i);
-            }
+            } */
 
             //* 1 ile 1000  arasındaki tek ve çift sayıların kendi içlerinde toplamlarını ekrana yazdır
-            int tekToplam=0;
+            /* int tekToplam=0;
             int ciftToplam=0;
 
             for (int i = 1; i <= 1000 ; i++)
@@ -351,8 +351,45 @@ namespace patika_practices
                 if(i%2==5)
                     continue;
                 Console.WriteLine(i);    
+            } */
+
+            //---- WHILE ----
+            //* 1'den başlayarak console'dan girilen sayıya kadar (sayı dahil) ortama hesaplayıp console'dan yazdıran program
+
+            Console.Write("Lütfen bir sayı giriniz: ");
+            int sayi= Convert.ToInt32(Console.ReadLine());
+            int sayac= 1;
+            int toplam= 0;
+
+            while (sayac<=sayi)
+            {
+                 toplam+=sayac;
+                 sayac++;
+            }
+            Console.WriteLine(toplam/sayi);
+
+            //* a'dan z'ye kadar olan tüm harfleri console'da yazdır
+
+            char character= 'a';
+
+            while (character<'z')
+            {
+                 Console.Write(character);
+                 character++;
             }
 
+            //---- FOREACH ----
+
+            string[] arabalar={"Audi", "Honda", "Ford", "Subaru"};
+
+            foreach (var araba in arabalar)
+            {
+                Console.WriteLine(araba);
+            }
+
+
+
+ 
 
 
 
