@@ -356,7 +356,7 @@ namespace patika_practices
             //---- WHILE ----
             //* 1'den başlayarak console'dan girilen sayıya kadar (sayı dahil) ortama hesaplayıp console'dan yazdıran program
 
-            Console.Write("Lütfen bir sayı giriniz: ");
+            /* Console.Write("Lütfen bir sayı giriniz: ");
             int sayi= Convert.ToInt32(Console.ReadLine());
             int sayac= 1;
             int toplam= 0;
@@ -366,26 +366,69 @@ namespace patika_practices
                  toplam+=sayac;
                  sayac++;
             }
-            Console.WriteLine(toplam/sayi);
+            Console.WriteLine(toplam/sayi); */
 
             //* a'dan z'ye kadar olan tüm harfleri console'da yazdır
 
-            char character= 'a';
+            /* char character= 'a';
 
             while (character<'z')
             {
                  Console.Write(character);
                  character++;
-            }
+            } */
 
             //---- FOREACH ----
 
-            string[] arabalar={"Audi", "Honda", "Ford", "Subaru"};
+            /* string[] arabalar={"Audi", "Honda", "Ford", "Subaru"};
 
             foreach (var araba in arabalar)
             {
                 Console.WriteLine(araba);
+            }  */
+
+            //---- ARRAYS ----
+
+            //* Array Tanımlama
+            /*1*/ string[] renkler= new string[5];
+            /*2*/ string[] hayvanlar= {"Kedi", "Köpek", "Kuş", "Kurt"};
+            /*3*/ int[] dizi;
+                  dizi= new int[5];
+
+            //* Array'lere değer atama ve erişim
+            renkler[0]="Kırmızı";
+            dizi[3]=10;
+
+            Console.WriteLine(hayvanlar[1]);
+            Console.WriteLine(renkler[0]);
+            Console.WriteLine(dizi[3]);
+
+            //* Döngüler ile Array kullanımı
+            //* Klavyeden girilen n tane programın ortalamasını hesaplayan program
+
+            Console.Write("Lütfen array'in eleman sayısını giriniz: ");
+            int arrayLength= int.Parse(Console.ReadLine());
+            int[] arrayNumbers= new int[arrayLength];
+
+            for (int i = 0; i < arrayLength; i++)
+            {
+                Console.Write("Lütfen {0}. sayıyı giriniz: ", i+1);
+                arrayNumbers[i]= int.Parse(Console.ReadLine());
             }
+
+            int totalOfNumbers=0;
+            foreach (int number in arrayNumbers)
+            {
+                totalOfNumbers+=number;
+            }
+            Console.WriteLine("Average of numbers is " + totalOfNumbers/arrayLength);
+
+
+
+
+
+
+            
 
 
 
