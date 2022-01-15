@@ -390,23 +390,23 @@ namespace patika_practices
             //---- ARRAYS ----
 
             //* Array Tanımlama
-            /*1*/ string[] renkler= new string[5];
-            /*2*/ string[] hayvanlar= {"Kedi", "Köpek", "Kuş", "Kurt"};
-            /*3*/ int[] dizi;
-                  dizi= new int[5];
+            /*1*/ /* string[] renkler= new string[5]; */
+            /*2*/ /* string[] hayvanlar= {"Kedi", "Köpek", "Kuş", "Kurt"}; */
+            /*3*/ /* int[] dizi;
+                  dizi= new int[5]; */
 
             //* Array'lere değer atama ve erişim
-            renkler[0]="Kırmızı";
+            /* renkler[0]="Kırmızı";
             dizi[3]=10;
 
             Console.WriteLine(hayvanlar[1]);
             Console.WriteLine(renkler[0]);
-            Console.WriteLine(dizi[3]);
+            Console.WriteLine(dizi[3]); */
 
             //* Döngüler ile Array kullanımı
             //* Klavyeden girilen n tane programın ortalamasını hesaplayan program
 
-            Console.Write("Lütfen array'in eleman sayısını giriniz: ");
+            /* Console.Write("Lütfen array'in eleman sayısını giriniz: ");
             int arrayLength= int.Parse(Console.ReadLine());
             int[] arrayNumbers= new int[arrayLength];
 
@@ -421,7 +421,60 @@ namespace patika_practices
             {
                 totalOfNumbers+=number;
             }
-            Console.WriteLine("Average of numbers is " + totalOfNumbers/arrayLength);
+            Console.WriteLine("Average of numbers is " + totalOfNumbers/arrayLength); */
+
+            //---- ARRAY CLASS METHODS ----
+            
+            //* Sort
+            int[] sayiDizisi={23,12,4,86,72,3,11,17};
+
+            Console.WriteLine("**** Sırasız Dizi ****");
+            foreach (int sayi in sayiDizisi)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            Console.WriteLine("**** Sıralı Diziler ****");
+            Array.Sort(sayiDizisi);
+
+            foreach (int sayi in sayiDizisi)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            //* Clear
+            Console.WriteLine("**** Array Clear ****");
+            //! Sayı dizisi elemanlarını kullanarak 2. index'ten itibaren 2 tane elemanı 0'lar.
+            Array.Clear(sayiDizisi,2,2);
+
+            foreach (int sayi in sayiDizisi)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            //* Reverse
+            Console.WriteLine("**** Array Reverse ****");
+            Array.Reverse(sayiDizisi);
+
+            foreach (int sayi in sayiDizisi)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            //* IndexOf
+            Console.WriteLine("**** Array IndexOf ****");
+            Console.WriteLine(Array.IndexOf(sayiDizisi,23));
+
+            //* Resize
+            Console.WriteLine("**** Array Resize ****");
+            Array.Resize<int>(ref sayiDizisi,9);
+            sayiDizisi[8]=99;
+
+            foreach (int sayi in sayiDizisi)
+            {
+                Console.WriteLine(sayi);
+            }
+
 
 
 
