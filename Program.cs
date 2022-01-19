@@ -426,7 +426,7 @@ namespace patika_practices
             //---- ARRAY CLASS METHODS ----
             
             //* Sort
-            int[] sayiDizisi={23,12,4,86,72,3,11,17};
+            /* int[] sayiDizisi={23,12,4,86,72,3,11,17};
 
             Console.WriteLine("**** Sırasız Dizi ****");
             foreach (int sayi in sayiDizisi)
@@ -441,70 +441,93 @@ namespace patika_practices
             {
                 Console.WriteLine(sayi);
             }
-
+ */
             //* Clear
-            Console.WriteLine("**** Array Clear ****");
+            /* Console.WriteLine("**** Array Clear ****");
             //! Sayı dizisi elemanlarını kullanarak 2. index'ten itibaren 2 tane elemanı 0'lar.
             Array.Clear(sayiDizisi,2,2);
 
             foreach (int sayi in sayiDizisi)
             {
                 Console.WriteLine(sayi);
-            }
+            } */
 
             //* Reverse
-            Console.WriteLine("**** Array Reverse ****");
+            /* Console.WriteLine("**** Array Reverse ****");
             Array.Reverse(sayiDizisi);
 
             foreach (int sayi in sayiDizisi)
             {
                 Console.WriteLine(sayi);
-            }
+            } */
 
             //* IndexOf
-            Console.WriteLine("**** Array IndexOf ****");
-            Console.WriteLine(Array.IndexOf(sayiDizisi,23));
+           /*  Console.WriteLine("**** Array IndexOf ****");
+            Console.WriteLine(Array.IndexOf(sayiDizisi,23)); */
 
             //* Resize
-            Console.WriteLine("**** Array Resize ****");
+            /* Console.WriteLine("**** Array Resize ****");
             Array.Resize<int>(ref sayiDizisi,9);
             sayiDizisi[8]=99;
 
             foreach (int sayi in sayiDizisi)
             {
                 Console.WriteLine(sayi);
-            }
+            } */
 
-
-
-
-
-
-
+            //---- METHODS ----
             
+            //* erisim_belirteci geridönüş_tipi metod_adı(parametreListesi / argüman)
+            //* {
+                    ////* komutlar
+                      //* return                
+            //* }
 
+            int a=2;
+            int b=3;
+            Console.WriteLine(a+b);
 
+            int sonuc= Topla(a,b);
+            Console.WriteLine(sonuc);
 
- 
+            Metodlar ornek= new Metodlar();
+            ornek.EkranaYazdir(Convert.ToString(sonuc));
 
-
-
-
-
-
-
-
-
+            int sonuc2=ornek.ArttirVeTopla(ref a, ref b);
+            ornek.EkranaYazdir(Convert.ToString(sonuc2));
+            ornek.EkranaYazdir(Convert.ToString(a+b));
 
 
      
+        }
+
+        static int Topla(int deger1, int deger2)
+        {
+            return(deger1+deger2);
         }
 
         
         
         
         
-        
+        class Metodlar
+        {
+            public void EkranaYazdir(string veri)
+            {
+                Console.WriteLine(veri);
+            }
+
+            public int ArttirVeTopla(ref int deger1, ref int deger2)
+            {
+                deger1+=1;
+                deger2+=1;
+                return deger1 + deger2;
+
+
+            }
+
+
+        }
         
         
         
